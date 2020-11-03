@@ -1,0 +1,48 @@
+
+<div >
+    <div  >
+        <h3>Proffesionals</h3>
+      </div>
+      <div class="card-body">
+         <table class="table">
+        <thead>
+         
+        </thead>
+        <tbody>
+          <tr *ngFor="let i of products">
+           
+           
+             
+          
+          
+          <div class="container col-sm-8">
+            <div class="img-container">
+              <img [src]="i.imageUrl">
+            </div>
+            <ul class="social-media">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+              <div class="user-info">
+                <h3>{{i.name}}</h3>
+                <h6>{{i.organisation}}</h6>
+                <!-- <h6>{{i.releaseDate}}</h6> -->
+                <h6>{{i.description}}</h6>
+                <h6>{{i.address}}</h6>
+                <span>{{i.starRating}} Years</span>
+              </div>
+          </div>
+          <br><br>
+          </tr>
+    
+        </tbody>
+      </table>
+      
+    </div>
+    </div>
+    
+  
+    

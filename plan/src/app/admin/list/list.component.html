@@ -1,0 +1,38 @@
+<div class="card">
+    <div class="card-body" >
+        <h3>Proffesionals List</h3>
+      </div>
+     <a href="/addpro"><button  class="btn btn-danger">Add User</button></a> 
+      <div class="card-body">
+         <table class="table table-hover table-dark">
+        <thead>
+          <tr>
+            
+            
+            <th>Name</th>
+            <th>Organisation</th>
+            <th>Available</th>
+            <th>Location</th>
+            <th>Cost</th>
+            <th>Year of Experience</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let i of pros">
+            <td><img  [src]="i.imageUrl" height="50px" width="50px"></td>
+            <td>{{i.name}}</td>
+            <td>{{i.organisation}}</td>
+            <td>{{i.address}}</td>
+            <td>{{i.price}}</td>
+            <td>{{i.starRating}}</td>
+            <td><button class="btn" (click)='editPro(i)'><i class="fas fa-pencil-alt"></i></button></td>
+            <td><button  class="btn" (click)='deletePro(i._id)'><i class="fas fa-trash"></i></button></td>
+          </tr>
+    
+        </tbody>
+      </table>
+    </div>
+    </div>
+    
+    
+    

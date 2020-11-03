@@ -1,0 +1,37 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+          <h1> Add Details</h1>
+  </div>
+  <div class="container">
+    <form  (ngSubmit)="addDetails()">
+      <!-- <label class="form-group">User Id</label>
+      <input type="text" name="p_id"  [(ngModel)]="p_item.planId" class="form-control"    required> -->
+      
+      
+      <label class="form-group">Name</label>
+      <input type="text" name="p_name" [(ngModel)]="p_item.name" class="form-control" id="lname"   required>
+      
+     
+     
+      <label class="form-group">Organisaztion Name</label>
+      <input type="text" name="p_code"  [(ngModel)]="p_item.organisation" class="form-control"  required >
+      <label class="form-group">Address</label>
+      <input type="text" name="p_date" [(ngModel)]="p_item.address" class="form-control" >
+      <label class="form-group">Description</label>
+      <input type="text" name="desc" [(ngModel)]="p_item.description" class="form-control" >
+
+
+
+      <label class="form-group">Price</label>
+      <input type="number" name="p_price"  [(ngModel)]="p_item.price" class="form-control" id="email" #email="ngModel"  required >
+      <label class="form-group">Years Of Experience</label>
+      <input type="text" name="p_rate" [(ngModel)]="p_item.starRating" class="form-control" >
+
+      <label class="form-group">Image URL</label>
+      <input type="text" name="p_image" [(ngModel)]="p_item.imageUrl" class="form-control" >
+
+
+      <button type="submit" id="button" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
